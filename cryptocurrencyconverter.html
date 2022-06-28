@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Cryptocurrency Converter </title>
+
+
+    <link href=
+"https://fonts.googleapis.com/css2?family=Amiri&family=Lobster&family=Pacifico&display=swap" 
+          rel="stylesheet">
+  
+    <!-- link .css file-->
+    <!-- link API file -->
+    
+</head>
+  
+<body>
+  
+    <!-- Cryptocurrency Converter proper  -->
+    <h1 class="heading">
+        Currency Converter</h1>
+  
+    <hr>
+    <div class="container">
+  
+        <div class="main">
+  
+            <div class="form">
+                <label for="old_amount">
+                    Amount to Convert : 
+                </label>
+                <input type="text" 
+                       class="searchBox" 
+                       placeholder="0.00" 
+                       id="old_amount">
+            </div>
+  
+            <div class="row">
+                <div class="col-1">
+                            <span class="input-text">From</span>
+                        </div>
+                        <select class="form" id="select1">
+                            <option value="">Select One …</option>
+                             <option value="USD">USDT</option>
+                              <option>  <!-- other options are inputed from API info -->   </option>
+                        </select>
+                    </div>
+                </div>
+  
+                <div class="col-1">
+                    <div class="input-group">
+                            <span class="input-text">To</span>
+                        </div>
+                        <select class="form" id="select2">
+                            <option value="">Select One …</option>
+                            <option value="USD">USDT</option>
+                             <option>  <!-- other options are inputed from API info -->   </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+  
+            <div class="text-center">
+  
+                <!-- the convert button -->
+                <button class="btn 1" 
+                        type="submit">
+                     Convert
+              </button>
+  
+                <!--the reset button -->
+                <button class="btn 2" 
+                        onclick="clearValue()">
+                   Reset
+              </button>
+            </div>
+  
+
+  <!-- Display the converted amount -->
+        <div id="finalAmount"; >
+            <h2>Converted Amount :
+            </h2>
+        </div>
+  
+    <!-- linking .js file -->
+    <script src="index.js"></script>
+</body>
